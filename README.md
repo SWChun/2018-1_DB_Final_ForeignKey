@@ -23,8 +23,8 @@ If you want to test the program with local database, you must do the following t
 ## Major Test cases ##
 <br>
 Test cases are detailed description of how each of the attributes and data changes in each scenario.
-<br>
 ### Admin side ###
+
 ### Managing User ###
 When adding a new user, you can check whether the new user has been added in the userlist.<br>
 <ul>
