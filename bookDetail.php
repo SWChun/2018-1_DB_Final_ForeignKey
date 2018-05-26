@@ -55,18 +55,13 @@
 
 <div>
 	<h2><strong>Reviews</strong></h2>;
-<?php 
-	$query = "SELECT review_text FROM reviewlist WHERE book_id=".$book_id;
-	$result = mysqli_query($conn, $query);	
+	<?php 
+	$query = "SELECT user_name, review_text from userlist NATURAL JOIN reviewlist WHERE book_id=".$book_id;
 	
-	$query = "SELECT user_name from userlist NATURAL JOIN reviewlist WHERE book_id=".$book_id;
-	
-	$result2 = mysqli_query($conn, $query);
+	$result = mysqli_query($conn, $query);
 	
 	while( ($row = mysqli_fetch_array($result)) ) {
-
-		$row2= mysqli_fetch_array($result2);
-		echo "<h4>작성자 : ".$row2["user_name"]."</h4>";
+		echo "<h4>작성자 : ".$row["user_name"]."</h4>";
 		echo "<p>".$row["review_text"]."</p>";
 		echo "<br>";
 	}
