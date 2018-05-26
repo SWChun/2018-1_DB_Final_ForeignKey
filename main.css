@@ -1,0 +1,8 @@
+table #id { width: 10% }
+table #title { width: 50% }
+table #writer { width: 20% }
+table #date { width: 20% }
+
+table > tbody td {
+  cursor: pointer;
+}
