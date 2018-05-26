@@ -20,13 +20,12 @@ If you want to test the program with local database, you must do the following t
   
 
 
-<p>Major Test cases</p>
-
+### Major Test cases ###
 <br>
-Test cases are detailed description of how each of the attributes and data changes in each scenario.<br>
-
-Admin side<br>
-Managing User<br>
+Test cases are detailed description of how each of the attributes and data changes in each scenario.
+<br>
+#### Admin side ####
+##### Managing User#####
 When adding a new user, you can check whether the new user has been added in the userlist.<br>
 <ul>
   <li>If you modify the user information, you can check that the user has been updated in the userlist as the admin has modified it.
@@ -34,13 +33,15 @@ When adding a new user, you can check whether the new user has been added in the
   <li>If the admin confirms a returned book from a user, the book is deleted from the rental status of the user, unless it has remaining overdue. Also, the user's borrowed book attribute is reduced by one and the quantity of the book is also increased by one.
 </ul>
 <br>
-Managing Book<br>
+##### Managing Book #####
 <ul>
   <li>If you add a new book, you can see the added book in the booklist.
   <li>When you update the contents of the book, you can check whether it is updated as admin input.
   <li>When deleting a book, make sure that the book is deleted from the booklist. Also the rental record containing the book should be deleted.
 </ul>
 	
-User side
-If you rent a book (if the total number of books borrowed is less than five or there is no overdue), the user borrowed book attribute will increase by one and the book borrowed by the user will appear on the user detail page. Also, the quantity of borrowed books is reduced by one.
-If a user who tries to borrow a new book has remaining overdue or borrowed more than five books, the borrow button is disabled. 
+#### User side ####
+<ul>
+<li>If you rent a book (if the total number of books borrowed is less than five or there is no overdue), the user borrowed book attribute will increase by one and the book borrowed by the user will appear on the user detail page. Also, the quantity of borrowed books is reduced by one.
+<li>If a user who tries to borrow a new book has remaining overdue or borrowed more than five books, the borrow button is disabled. 
+</ul>
