@@ -25,7 +25,7 @@ Test cases are detailed description of how each of the attributes and data chang
 
 ### Admin side ###
 
-### Managing User ###
+#### Managing User ####
 When adding a new user, you can check whether the new user has been added in the userlist.<br>
 <ul>
   <li>If you modify the user information, you can check that the user has been updated in the userlist as the admin has modified it.
@@ -33,7 +33,7 @@ When adding a new user, you can check whether the new user has been added in the
   <li>If the admin confirms a returned book from a user, the book is deleted from the rental status of the user, unless it has remaining overdue. Also, the user's borrowed book attribute is reduced by one and the quantity of the book is also increased by one.
 </ul>
 
-### Managing Book ###
+#### Managing Book ####
 <ul>
   <li>If you add a new book, you can see the added book in the booklist.
   <li>When you update the contents of the book, you can check whether it is updated as admin input.
