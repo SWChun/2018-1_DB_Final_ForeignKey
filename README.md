@@ -15,25 +15,31 @@ Team Member: 21200758 SungWoo Chun, 21300461 SangHum Woo, 21400205 JinMo Kim, 21
 ### Back-end testing ###
 If you want to test the program with local database, you must do the following three things:
   * install php and apache server and place the source code files in htdocs folder inside the server directory.
-  * import test.sql file to build a new database in your mySQL
+  * import library.sql file to build a new database in your mySQL
   * change the login information inside dbconfig.php. For example, the password is current set as the password to login into our own database, so you must change this to your own in order to test this program running on your own database.
   
 
 
 <p>Major Test cases</p>
-Test cases are detailed description of how each of the attributes and data changes in each scenario.
 
-Admin side
-Managing User
-When adding a new user, you can check whether the new user has been added in the userlist.
-If you modify the user information, you can check that the user has been updated in the userlist as the admin has modified it.
-If you delete the user information, you can check if the user is deleted from the userlist.
-If the admin confirms a returned book from a user, the book is deleted from the rental status of the user, unless it has remaining overdue. Also, the user's borrowed book attribute is reduced by one and the quantity of the book is also increased by one.
+<br>
+Test cases are detailed description of how each of the attributes and data changes in each scenario.<br>
 
-Managing Book
-If you add a new book, you can see the added book in the booklist.
-When you update the contents of the book, you can check whether it is updated as admin input.
-When deleting a book, make sure that the book is deleted from the booklist. Also the rental record containing the book should be deleted.
+Admin side<br>
+Managing User<br>
+When adding a new user, you can check whether the new user has been added in the userlist.<br>
+<ul>
+  <li>If you modify the user information, you can check that the user has been updated in the userlist as the admin has modified it.
+  <li>If you delete the user information, you can check if the user is deleted from the userlist.
+  <li>If the admin confirms a returned book from a user, the book is deleted from the rental status of the user, unless it has remaining overdue. Also, the user's borrowed book attribute is reduced by one and the quantity of the book is also increased by one.
+</ul>
+<br>
+Managing Book<br>
+<ul>
+  <li>If you add a new book, you can see the added book in the booklist.
+  <li>When you update the contents of the book, you can check whether it is updated as admin input.
+  <li>When deleting a book, make sure that the book is deleted from the booklist. Also the rental record containing the book should be deleted.
+</ul>
 	
 User side
 If you rent a book (if the total number of books borrowed is less than five or there is no overdue), the user borrowed book attribute will increase by one and the book borrowed by the user will appear on the user detail page. Also, the quantity of borrowed books is reduced by one.
