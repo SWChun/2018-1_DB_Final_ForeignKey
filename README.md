@@ -2,7 +2,7 @@
 
 ## Library Management System
 
-Team Member:21200758 SungWoo Chun, 21300461 SangHum Woo, 21400205 JinMo Kim, 21300649 JunYong Jang
+Team Member: 21200758 SungWoo Chun, 21300461 SangHum Woo, 21400205 JinMo Kim, 21300649 JunYong Jang
 
 ## How to test our program ##
 
