@@ -9,7 +9,7 @@ Team Member: 21200758 SungWoo Chun, 21300461 SangHum Woo, 21400205 JinMo Kim, 21
 ### Front-end testing ###
   Our program is web-based program, so you do not need to install anything for user-side testing.
   Just visit the following URL, and you will see our running program.
-  http://119.202.32.238/db/2018-1_DB_Final_ForeignKey/index.html
+  http://119.202.32.238/db/2018-1_DB_Final_ForeignKey/src/index.html
   In case the website is not visitable because I have turn off the server computer, contact one of our team member, please.
 
 ### Back-end testing ###
